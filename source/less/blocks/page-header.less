@@ -1,0 +1,74 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;  
+  padding-top: 1.56vw;
+  padding-right: 4.16vw;
+  padding-bottom: 1.56vw;
+  padding-left: 4.16vw;  
+}
+
+.page-header__logo-link {
+  margin-right: auto;
+  width: 4.17vw;
+  height: 4.17vw;
+}
+
+.page-header__logo {
+  width: 4.17vw;
+  height: 4.17vw;
+}
+
+.page-header__lang-toggle {
+  width: 4.17vw;
+  height: 4.17vw;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__lang-id {
+  font-size: 1.05vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @white;
+}
+
+.page-header__nav-toggle {
+  position: relative;
+  width: 4.17vw;
+  height: 4.17vw;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;  
+}
+
+.page-header__nav-toggle::before {
+  position: absolute;
+  content: "";
+  top: 1.61vw;
+  left: 0.77vw;
+  width: 2.6vw;
+  height: 0.3vw;
+  background-color: @white;
+}
+
+.page-header__nav-toggle::after {
+  position: absolute;
+  content: "";
+  top: 2.29vw;
+  left: 0.77vw;
+  width: 2.6vw;
+  height: 0.3vw;
+  background-color: @white;
+}
