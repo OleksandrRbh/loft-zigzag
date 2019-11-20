@@ -87,3 +87,42 @@
   }
 }
 
+@media (max-width: @device-width) {
+  .gallery-slider {    
+    top: auto;
+    margin-top: auto;
+    bottom: -10.7vw;      
+    height: 104vw;
+    width: 80.53vw;
+    margin-left:-20.8vw;
+  }
+
+  .gallery-slider__numbering {
+    display: none;
+  }
+
+  .gallery-slider__image-window {
+    height: 104vw;
+    width: 80.53vw;
+    
+  }
+  
+  .gallery-slider__image {
+    height: 104vw;
+    width: 80.53vw;
+  }
+
+  .gallery-slider__btn {    
+    width: 10.7vw;
+    height: 10.7vw;    
+  
+    &::before {
+      content: "";
+      width: 2.4vw;
+      height: 4vw;    
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+}

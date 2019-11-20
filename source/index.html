@@ -15,37 +15,37 @@
     <button class="page-header__lang-toggle" type="button" aria-label="Change menu">
       <span class="page-header__lang-id">ru</span>      
     </button>    
-    <button class="page-header__nav-toggle" type="button" aria-label="Open menu"></button>    
+    <button class="page-header__nav-toggle page-header__nav-toggle--closed" type="button" aria-label="Open menu"></button>    
   </header>
 
   <nav class="side-nav">
     <span class="side-nav__lead">Lofti Space</span>
     <ul class="side-nav__list">
       <li class="side-nav__item">
-        <a class="side-nav__link" href="#"></a>
+        <button class="side-nav__link current" type="button"></button>
       </li>
       <li class="side-nav__item">
-        <a class="side-nav__link" href="#"></a>
+        <button class="side-nav__link" type="button"></button>
       </li>
       <li class="side-nav__item">
-        <a class="side-nav__link" href="#"></a>
+        <button class="side-nav__link" type="button"></button>
       </li>
       <li class="side-nav__item">
-        <a class="side-nav__link" href="#"></a>
+        <button class="side-nav__link" type="button"></button>
       </li>
       <li class="side-nav__item">
-        <a class="side-nav__link" href="#"></a>
+        <button class="side-nav__link" type="button"></button>
       </li>
       <li class="side-nav__item">
-        <a class="side-nav__link" href="#"></a>
+        <button class="side-nav__link" type="button"></button>
       </li>
     </ul>    
   </nav>
 
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed">
       <ul class="main_nav__list">
         <li class="main_nav__item">
-          <a class="main_nav__link main_nav__link--active" href="#">Главная</a>
+          <a class="main_nav__link current" href="#">Главная</a>
         </li>
         <li class="main_nav__item">
           <a class="main_nav__link" href="#">О нас</a>
@@ -63,10 +63,10 @@
           <a class="main_nav__link" href="#">Контакты</a>
         </li>
         <li class="main_nav__item">
-          <a class="main_nav__link" href="#">Новости</a>
+          <a class="main_nav__link--disabled" href="#">Новости</a>
         </li>
         <li class="main_nav__item">
-          <a class="main_nav__link" href="#">Условия</a>
+          <a class="main_nav__link--disabled" href="#">Условия</a>
         </li>        
       </ul>
       <ul class="main_nav__social">
@@ -82,7 +82,7 @@
       </ul>
     </nav>    
 
-  <section class="main-screen screen">
+  <section class="main-screen screen current">
     <div class="screen__text-content">
       <h2 class="main-screen__heading screen__heading">Комфортная среда Вашей работы</h2>
       <p class="main-screen__desc screen__desc">Оцените качественный сервис, записавшись на пробный день уже сегодня</p>
@@ -244,8 +244,7 @@
               </button>
             </p>
           </div>        
-        </div>
-                
+        </div>                
       </div>
     </div>
   </section>
@@ -325,5 +324,7 @@
       </div>
     </section>
   </div>
+  <script src="js/lodash.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
